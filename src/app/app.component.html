@@ -1,0 +1,10 @@
+<router-outlet></router-outlet>
+<!-- <mat-spinner [diameter]="100" *ngIf="spinnerService.visibility | async" style="margin:0 auto;">
+</mat-spinner> -->
+<div class="overlay" *ngIf="spinnerService.visibility | async">
+	<div class="center">
+		<mat-spinner diameter=50 mode="indeterminate" color="accent">
+		</mat-spinner>
+
+	</div>
+</div>
